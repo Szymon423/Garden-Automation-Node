@@ -3,7 +3,7 @@ bringing IoT into your garden (kind of)
 
 ## This is finished product
 <p align="center">
-  <img src="" alt="There is no image becouse I am still working on it :)">
+  <img width=600 src="https://user-images.githubusercontent.com/96399051/223214407-eda98e27-b63d-4be4-910a-2eab00f92b2f.gif" alt=":)">
 <p/>
 
 ## Mile stones
