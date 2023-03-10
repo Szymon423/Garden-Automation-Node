@@ -3,18 +3,18 @@ bringing IoT into your garden (kind of)
 
 ## This is finished product
 <p align="center">
-  <img src="" alt="There is no image becouse I am still working on it :)">
+  <img src="https://user-images.githubusercontent.com/96399051/223214407-eda98e27-b63d-4be4-910a-2eab00f92b2f.gif" alt=":)">
 <p/>
 
 ## Mile stones
  1. What do I want to achive? ✔️
  2. Block diagram ✔️
  3. Decide on components ✔️
- 4. Gather all necessary parts ✔️
- 5. Desing PCB ✔️
- 6. Start CODING (fun part)
+ 4. Desing PCB ✔️
+ 5. Gather all necessary parts ✔️
+ 6. Start CODING (fun part) ✔️
  7. Wait 4ever till they finally arrive ✔️
- 8. Assemble thing
+ 8. Assemble thing ✔️
  9. Realise that I've made mistakes...
  10. FIX IT
  11. If You are still reading this list, I appreciate it,
@@ -45,28 +45,31 @@ Sorry for multilingualism but I deleted my draw.io diagram and was lazy and lef 
  ## Decide on components
 As mentioned beefore - I used ESP32, for onboard conditions sensor I want to use BMP280, becouse I want to use analog measuring of ground humidity - I need to have classic analog input, for temperature measuring I want to use DS18B20 - cheap and easy to use sensor. Digital outupts will be done by electromagnetic relays, digital inputs will be done by octocouplers. Additionally step down converter for changing 24V power supply volatage to something like 5VDC.
 
-## Gather all necessary parts
-<p align="center">
-  <img src="" alt="Image of my parts pile, I am still gathering them...">
-<p/>
-
 ## Desing PCB
 I started designing this project quite long ago and went through few iterations. This is how last iteration is going to look like:
 <p align="center">
-  <img width=700 src="https://user-images.githubusercontent.com/96399051/219206965-d66beead-bf75-472c-a1f2-4415c399338a.png" alt="IMG of PCB">
+  <img width=700 src="https://user-images.githubusercontent.com/96399051/222986095-0092680d-a73f-43ed-8c38-7c2790de0f38.png" alt="IMG of PCB">
 <p/>
-Thats all for now. Progress is low becouse I have to keep my other more important projects up to date. We will see how it will go. I have high hopes for this one actually.
 
-# I have gathered all parts, and ordered PCBs - time for waiting
+## Gather all necessary parts
+<p align="center">
+  <img width=600 src="https://user-images.githubusercontent.com/96399051/222985891-c41c0ffa-5133-4186-91e7-bc85f72e61d7.jpg" alt="Image of my parts pile">
+<p/>
+
+# PCBs ordered - time for waiting
 <p align="center">
   <img width=400 src="https://user-images.githubusercontent.com/96399051/222723082-736f6965-3bbf-4de7-9e4b-33913cc176df.png" alt="production done">
 <p/>
 
-# PCBs arrived
+## PCBs arrived
 Their trip took only 8 days - nice. Now I have to get them to my place from my parents house :)
 
 # A little pre render
 <p align="center">
-  <img width=800 src="https://user-images.githubusercontent.com/96399051/222533701-96219be4-5b1e-4cbb-ae1a-1e9b635c46ff.png" alt="Render of project">
+  <img width=1000 src="https://user-images.githubusercontent.com/96399051/222986232-9926a5eb-20aa-44cc-81c9-f9797a9678c5.png" alt="Render of project">
 <p/>
-I know It's missing some parts, but all in all looks quite good at least for me :D
+
+# Troubbleshoting
+I think that there is not much broken :D For now everything works as it supposed to.
+
+
