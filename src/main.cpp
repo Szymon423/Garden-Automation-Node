@@ -41,7 +41,7 @@ void reconnect()
 {
   bool ctd = false;
   //funkcja jest wywolywana jesli utracono polaczenie z serwerem
-  USBSerial.println("Rozlaczono!");
+  //USBSerial.println("Rozlaczono!");
   while(!ctd)
   {
     USBSerial.print("Laczenie z serwerem...");
@@ -91,8 +91,17 @@ void setup()
   sensors.begin();
 }
 
+unsigned long currentTime {0};
+unsigned long previousTime {0};
+unsigned long cycleTime {0};
+
 void loop() 
 {
+  currentTime = millis();
+  cycleTime = currentTime - previousTime;
+  previousTime = currentTime;
+
+  
   sensors.requestTemperatures();
   float temperature = sensors.getTempCByIndex(0);
   float humidity = hs.readHumidity();
@@ -108,10 +117,10 @@ void loop()
   // USBSerial.write("off\n");
   // hardware::setOutput(1, 0);
   // hardware::setOutput(2, 0);
-  delay(100); 
+  // delay(100); 
   
-  USBSerial.println("temperature: " + temperature_str);
-  USBSerial.println("humidity: " + humidity_str);
+  // USBSerial.println("temperature: " + temperature_str);
+  // USBSerial.println("humidity: " + humidity_str);
 
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D for 128x64
     USBSerial.println(F("SSD1306 allocation failed"));
@@ -132,6 +141,9 @@ void loop()
 
   display.setCursor(0, 30);
   display.println("temperature: " + temperature_str);
+
+  display.setCursor(0, 40);
+  display.println("Cycle time: " + String(cycleTime));
 
   display.display(); 
 
